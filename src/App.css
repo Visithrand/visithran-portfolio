@@ -1992,17 +1992,7 @@ textarea:focus {
 }
 
 /* Add this at the beginning of your file */
-<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
-  <filter id="turbulence">
-    <feTurbulence type="turbulence" baseFrequency="0.02" numOctaves="3" result="turbulence"/>
-    <feDisplacementMap in2="turbulence" in="SourceGraphic" scale="10" xChannelSelector="R" yChannelSelector="G"/>
-  </filter>
-  
-  <filter id="displacement">
-    <feTurbulence type="fractalNoise" baseFrequency="0.01" numOctaves="3" result="noise"/>
-    <feDisplacementMap in="SourceGraphic" in2="noise" scale="5" xChannelSelector="R" yChannelSelector="G"/>
-  </filter>
-</svg>
+
 
 .resume-header h1 span::before {
   animation: 
